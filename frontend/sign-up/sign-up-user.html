@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./sign-up-user.css">
+</head>
+<body>
+    <div>
+        
+        <div class="d-add"><i class="fa fa-user-plus" aria-hidden="true"></i></i></div>
+        <h2>Sign Up</h2>
+        <form>
+           <div class="d-user">
+            <input type="text" placeholder="Name" id="inpNameSignUp" required>
+            <input type="email" placeholder="Email Address" id="inpEmlSignUp" required>
+            <input type="password" placeholder="Password" id="inpPswdilSignUp" required>
+           </div> 
+           <div class="d-box">
+            <span>
+             <input type="checkbox" required>   
+            </span>
+            <span>I read and agree to </span>
+            <a href="#">Terms & Conditions</a>
+           </div>
+           <div class="d-btn">
+            <button type="submit" id="subSignUp">SIGN UP</button>
+           </div>         
+           <div class="d-links">
+            <span>Already have an account?</span> 
+            <a href="../sign-in/sign-in-user.html">Sign In</a>
+           </div>
+        </form>
+    </div>
+    <script src="./sign-up-user.js"></script>
+</body>
+</html>
