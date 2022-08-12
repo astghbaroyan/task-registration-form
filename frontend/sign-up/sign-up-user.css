@@ -1,0 +1,77 @@
+body {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    background-color: rgb(255, 255, 255);
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+div {
+    display: block;    
+}
+
+.d-add {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    margin: 25px;
+    background-color: #9c27b0;
+}
+
+h2 {
+    font-size: 23px;
+}
+
+form {
+    margin: 0 -130px;
+    width: 100%;
+    border-color: rgb(114, 102, 102);
+       
+}
+
+.d-user input {
+    font: inherit;
+    width: 100%;
+    height: 40px;
+    margin: 5px 0 20px 0;
+}
+
+.d-box input {
+    margin: 5px 0 20px 5px;
+    color:black;
+    cursor: pointer;
+}
+
+.d-box a {
+    width: 100%;
+    padding: 1px 10px;
+    margin: 5px 0 20px 5px;
+    text-align: justify;
+    color: #1976d2;
+    text-decoration-color: rgba(25, 118, 210, 0.4); 
+}
+
+.d-btn button {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 5px 0 20px 5px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background: #1976d2;
+    border-color: #1976d2;
+    border-radius: 4px;
+}
+
+.d-links {
+    width: 100%;
+    padding: 1px 10px;
+    margin: 5px 0 20px 5px;
+    text-align: justify;
+    color: #1976d2;
+    text-decoration-color: rgba(25, 118, 210, 0.4);
+}
