@@ -25,7 +25,7 @@ class UserController {
         if (req.body.password.match(passwordPattern)) {
             console.log('Password valid');
         } else {
-            return res.status(500).send({ message: 'Your password must be at least 6-16 characters as well as contain at least one uppercase,one lowercase,one number' });
+            return res.status(500).send({ message: 'Your password must be at least 8-16 characters as well as contain at least one uppercase,one lowercase,one number' });
         }
 
         const email = await User.findOne({ email: req.body.email });
