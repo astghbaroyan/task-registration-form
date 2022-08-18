@@ -10,12 +10,16 @@ dotenv.config();
 
 const staticFiles = express.static('./frontend');
 app.use(staticFiles);
-
 app.use(json);
 app.use(userRouter);
 
 (async () => {
-    await mongoose.connect(process.env.DB_URL);
+    try {
+        await mongoose.connect(process.env.DB_URL);
+        console.log('DB connected successfully to server');
+    } catch (error) {
+        console.log('DB connection error', error);
+    }
 })();
 
 http.listen(port, () => {
