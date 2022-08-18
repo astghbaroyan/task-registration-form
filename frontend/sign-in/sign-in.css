@@ -21,7 +21,7 @@ div {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     margin: 15px;
     background-color: #9c27b0;
 }
@@ -68,4 +68,9 @@ form {
     font-size: 0.875rem;
     color: #1976d2;
     text-decoration-color: rgba(25, 118, 210, 0.4);
+}
+
+.d-links .first-link{
+    margin-left: 0;
+    margin-right: 70px;
 }
