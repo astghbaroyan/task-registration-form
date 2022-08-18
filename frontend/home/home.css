@@ -5,14 +5,38 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.nav {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-right: 1px solid #ccc;
+  height: 100vh;
+  background: #ffffff;
+  transition: 0.5s;
+  overflow: hidden;
+  z-index: 1;
+}
+
 ul {
   padding: 0;
   list-style: none;
 }
 
 .nav ul li {
-  padding: 20px;
-  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav ul li:first-child {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(212, 212, 212);
+  background: #ffffff;
 }
 
 .nav ul li:last-child {
@@ -21,165 +45,231 @@ ul {
   width: 100%;
 }
 
-.li i {
-  margin-right: 5px;
-  width: 20px;
+.nav ul .close-menu i {
+  padding-left: 200px;
+  cursor: pointer;
 }
 
-.nav {
-  position: fixed;
-  left: 0;
-  top: 0;
-  border-right: 1px solid #ccc;
-  height: 100vh;
-  background: #ffffff;
-  z-index: 1;
+.material-icons {
+  position: relative;
+  width: 50px;
+  height: 20px;
+  top: 10px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .li:hover {
   background-color: rgb(241, 240, 240);
-  cursor: pointer;
 }
 
-.closeMenu {
-  display: flex;
-  justify-content: flex-end;
-  cursor: pointer;
+.nav ul .report {
+  padding-left: 70px;
+  font-size: 16px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-top: 1px solid rgb(212, 212, 212);
 }
 
-.brend {
-  display: flex;
-  justify-content: flex-end;
+.nav ul li .last-icon i {
+  padding-left: 0;
+  padding-right: 25px;
 }
 
 .main {
-  margin-left: 170px;
-}
-
-.row {
-  display: flex;
-}
-
-.end {
-  justify-content: flex-end;
-}
-
-.header {
-  background: #1976d2;
-  padding: 13px;
-  border-bottom: 1px solid #ccc;
-}
-
-.header i {
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.header span {
-  color: #ffffff;
-  font-size: 20px;
-  margin: 1% 2% 0 1%;
-}
-
-.header .notification i {
-  color: #ffffff;
-  font-size: 20px;
-  margin: 0.1% 0 0 98%;
-  top: 2%;
-}
-
-.section {
-  padding: 500px 30px;
   background-color: rgb(241, 240, 240);
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #1976d2;
+  border-bottom: 1px solid #ccc;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  z-index: inherit;
+}
 
+.header div i {
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 20px;
+  padding-left: 25px;
+  padding-right: 40px;
+}
+
+.header .notification .fa-bell {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding-left: 93%;
+  padding-right: 10px;
+}
+
+.header .notification .fa-circle {
+    position: absolute;
+    color: rgb(221, 25, 25);
+    font-size: 10px;
+    padding-left: 98%;
+    padding-right: 5px;
+    margin-top: -25px;
+  } 
+
+.header div .dash {
+  color: #ffffff;
+  font-size: 20px;
+  position: absolute;
+}
+
+.main .header .result {
+  position: absolute;
+  margin-left: 89%;
+  margin-top: 14%;
+  padding-top: 200px;
+  padding-bottom: 0;
+  padding-left: 200px;
+  border: 1px solid #ccc;
+  background: #ffffff;
+  z-index: 1;
+}
+
+.main .header .result .exm-result {
+  position: absolute;
+  color: #1976d2;
+  font-size: 18px;
+  margin-top: -195px;
+  margin-left: -95%;
+}
+
+.main .header .result .text1 {
+  position: absolute;
+  font-size: 15px;
+  margin-top: -160px;
+  margin-left: -95%;
+}
+
+.main .header .result .score-num {
+  position: absolute;
+  font-size: 28px;
+  margin-top: -130px;
+  margin-left: -95%;
+}
+
+.main .header .result .text2 {
+  position: absolute;
+  font-size: 15px;
+  margin-top: -100px;
+  margin-left: -95%;
+}
+
+.section {
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 0;
+  padding-top: 2%;
+  padding-bottom: 32%;
+  background-color: rgb(241, 240, 240);
+}
 
 .section .day-chart {
-  margin-top: -24%;
-  margin-left: 15%;
   width: 850px;
   height: 250px;
-
 }
 
 .section .today {
   position: absolute;
   color: #1976d2;
-  margin-top: -21%;
-  margin-left: 15%;
+  margin-top: 10px;
+  margin-left: 2%;
   font-size: 20px;
   z-index: 1;
 }
 
+.section .deposits {
+  position: absolute;
+  margin-left: 46%;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 250px;
+  border: 1px solid #ccc;
+  background: #ffffff;
+  z-index: 1;
+}
 
 .section .deposits .deposit {
-  position: absolute;
+  display: flex;
   color: #1976d2;
-  margin-top: -21%;
-  margin-left: 55%;
+  margin-top: 8px;
+  margin-left: -230px;
   font-size: 20px;
-  /* z-index: 1; */
 }
 
 .section .deposits .mon {
-  position: absolute;  
+  display: flex;
   font-size: 37px;
-  margin-top: -19.5%;
-  margin-left: 55%;
-  /* z-index: 1; */
+  padding-top: 10px;
+  margin-left: -230px;
 }
 
 .section .deposits .date {
-  position: absolute;  
+  display: flex;
   font-size: 18px;
-  margin-top: -17%;
-  margin-left: 55%;
-  /* z-index: 1; */
+  margin-left: -230px;
+  padding-top: 5px;
 }
 
 .section .deposits a {
-  position: absolute; 
-  color: #1976d2; 
+  display: flex;
+  color: #1976d2;
   font-size: 18px;
-  margin-top: -11%;
-  margin-left: 55%;
-  /* z-index: 1; */
+  margin-left: -230px;
+  padding-top: 90px;
+  padding-bottom: 5px;
+}
+
+.section .order {
+  margin-top: 2%;
+  margin-left: 0;
+  margin-right: 30%;
+  padding-bottom: 360px;
+  padding-left: 0;
+  padding-right: 140px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  background: #ffffff;
+  z-index: 1;
 }
 
 .section .order .re-order {
   position: absolute;
-  color: #1976d2;  
+  color: #1976d2;
   font-size: 20px;
-  margin-top: 3%;
-  margin-left: 15%;
-  /* z-index: 1; */
+  margin-top: 1%;
+  margin-left: 2%;
 }
 
 .section .order table {
   position: absolute;
-  /* background: white; */
-  width: 53%;
-  font-size: 17px;
-  margin-top: 5%;
-  margin-left: 16%;
-  
-  /* z-index: 1; */
+  width: 55%;
+  font-size: 16px;
+  margin-top: 2.5%;
+  margin-left: 3%;
 }
 
- th, td {
+th,
+td {
   border-bottom: 1px solid #ddd;
   height: 40px;
   text-align: left;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .section .order a {
-  position: absolute; 
-  color: #1976d2; 
+  position: absolute;
+  color: #1976d2;
   font-size: 18px;
-  margin-top: 18%;
-  margin-left: 15%;
-  /* z-index: 1; */
+  margin-top: 17%;
+  margin-left: 2%;
 }
-
